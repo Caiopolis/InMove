@@ -1,0 +1,677 @@
+/* Animação */
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Geral */
+
+p {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+button:hover {
+  box-shadow: 0px 0px 10px rgba(255, 89, 0, 0.792);
+  transition: 0.5s;
+  background-color: rgb(242, 111, 4);
+}
+div.botão button {
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 13pt;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 10px 40px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.interface {
+  max-width: 1280px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+}
+h2.titulo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35pt;
+  color: white;
+  text-align: center;
+}
+span {
+  color: rgb(244, 114, 7);
+}
+h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+/* Cabeçalho */
+
+header {
+  padding: 40px 4%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 19px;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: rgb(72, 72, 72);
+  text-decoration: none;
+  padding: 0 50px;
+  display: inline-block;
+}
+header a:hover {
+  color: rgb(255, 85, 0);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 50px;
+  margin-left: -80px;
+}
+
+header button {
+  display: flex;
+  padding: 2px 2px;
+  border-radius: 100%;
+  border: 0px;
+  cursor: pointer;
+}
+
+.logo {
+  margin-left: -8%;
+}
+
+/* Primeira Parte */
+
+.black_hole {
+  width: 400px;
+  height: 250px;
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(255, 98, 0, 0) 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 60px rgb(255, 255, 255);
+  animation: pulse 2s infinite;
+}
+.primeira-parte {
+  margin-top: 2%;
+}
+.primeira-parte h1 {
+  color: white;
+  font-size: 35pt;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+section.primeira-parte {
+  padding: 40px 4%;
+}
+
+section.primeira-parte .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}
+
+.primeira-parte h1 span {
+  color: rgb(244, 114, 7);
+  font-size: 50pt;
+}
+
+.primeira-parte p {
+  color: rgb(255, 255, 255);
+  font-size: 15pt;
+  font-family: "Poppins", sans-serif;
+  margin: 40px 0;
+  line-height: 25pt;
+  font-weight: 500;
+}
+
+/* ESTILO DE OPÇÕES */
+section.seções {
+  padding: 40px 4%;
+}
+
+section.seções .flex {
+  gap: 60px;
+}
+
+.seções .opções-box {
+  color: white;
+  padding: 80px;
+  border-radius: 20px;
+  margin-top: 60px;
+  border: 2px solid rgb(77, 77, 77);
+}
+.seções .opções-box i {
+  font-size: 70px;
+  color: rgb(244, 114, 7);
+}
+.seções .opções-box h3 {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.seções .opções-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(244, 114, 7, 0.752);
+  transition: 0.2s;
+}
+
+/* segunda parte */
+
+div.text-info p {
+  color: white;
+  text-align: center;
+  display: flex;
+  padding: 40px 4%;
+}
+div.text-info p span {
+  color: rgb(244, 114, 7);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15pt;
+  margin-left: 10px;
+  margin-top: 10px;
+  gap: 100px;
+}
+
+div.text-info h4 {
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35pt;
+}
+i {
+  font-size: 70px;
+}
+i#icone {
+  color: rgb(244, 114, 7);
+  font-size: 50px;
+}
+
+.img-info {
+  padding: 40px 4%;
+  margin-top: 6%;
+  margin-left: -8%;
+}
+
+/* Rodapé */
+footer {
+  padding: 40px 4%;
+  box-shadow: 0 0 40px 10px rgba(255, 255, 255, 0.214);
+  margin-top: 10%;
+}
+footer div.rodape {
+  padding: 23px 0;
+}
+.borda {
+  border-bottom: 2px solid rgb(255, 55, 0);
+}
+div.rodape p i#icone-footer {
+  color: rgb(255, 102, 0);
+  font-size: 22pt;
+  margin-right: 1%;
+}
+div.rodape p a {
+  color: rgb(131, 131, 131);
+  text-decoration: underline;
+  width: 300px;
+}
+div.rodape p {
+  color: rgb(113, 113, 113);
+  text-decoration: underline;
+  width: 300px;
+}
+div.rodape p:hover {
+  color: rgb(255, 85, 0);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+div.rodape p a:hover {
+  color: rgb(255, 85, 0);
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+footer div.contatos i {
+  padding: 0 20px;
+  color: rgb(244, 114, 7);
+  font-size: 30pt;
+}
+
+/* Modo escuro/claro */
+
+div.tema i {
+  color: rgba(91, 91, 91, 0.864);
+  font-size: 30pt;
+  cursor: pointer;
+}
+div.tema i:hover {
+  color: rgb(255, 85, 0);
+  transition: 0.5s;
+}
+
+body.light {
+  background-color: rgb(255, 255, 255);
+}
+
+p.light {
+  color: black;
+}
+
+h1.light {
+  color: black;
+}
+h2.light {
+  color: black;
+}
+h3.light {
+  color: black;
+}
+div.text-info h4.light {
+  color: black;
+}
+div.text-info p.light {
+  color: black;
+}
+div.black_hole.light {
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  box-shadow: 0 10px 80px rgb(0, 0, 0);
+}
+footer.light {
+  box-shadow: 0 0 40px 10px rgba(0, 0, 0, 0.214);
+
+}
+
+
+
+/* ASSOCIAÇÃO */
+
+.seções .opções-box-associacao {
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 60px;
+  border: 2px solid rgb(77, 77, 77);
+}
+.seções .opções-box-associacao i {
+  font-size: 40px;
+  color: rgb(244, 114, 7);
+}
+.seções .opções-box-associacao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(244, 114, 7, 0.752);
+  transition: 0.2s;
+}
+div img.foto_associados{
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.752);
+    height: 230%;
+}
+
+.black_hole.associados{
+    box-shadow: 0 0 20px rgb(242, 241, 241);
+    animation: none;
+    margin-top: -230px;
+}
+
+
+/* Planos de associação */
+h4#titulo-associados{
+  text-align: center;
+  margin-left: 15%;
+}
+
+i#icone1 {
+  color: rgba(143, 64, 0, 0.922);
+  font-size: 50px;
+  margin-left: 40%;
+  
+}
+i#icone2 {
+  color: rgb(161, 161, 161);
+  font-size: 50px;
+  margin-left: 40%;
+ 
+}
+i#icone3 {
+  color: rgb(247, 168, 0);
+  font-size: 50px;
+  margin-left: 40%;
+
+}
+div.text-info p#texto span {
+  color: rgb(244, 114, 7);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15pt;
+ 
+}
+div#associados {
+  padding: 100px 30%;
+ 
+}
+h1#texto{
+  color: rgb(244, 114, 7);
+}
+div.text-info p.vantagens {
+  margin-left: 10%;
+  
+}
+
+div#botao-planos{
+  margin-left: 42.5%;
+  margin-top: -6%;
+}
+
+/* CLIENTE */
+
+img.foto_cliente{
+  border-radius: 10%;
+  box-shadow: 0 0 20px rgb(242, 241, 241);
+}
+
+/* EMPRESA */
+section.Simulando_preco{
+  padding: 80px 4%;
+  }
+h4#simule_preco{
+  text-align: center;
+}
+form{
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+
+}
+
+/* SIMULE O PREÇO */
+
+input.formula{
+  border: none;
+  border-radius: 10%;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  color: rgb(255, 123, 0);
+  margin: 7px auto;
+  background-color: rgba(50, 59, 59, 0.255);
+  box-shadow: 0 0 10px rgba(244, 114, 7, 0.493);
+  
+}
+input.valor_total{
+  box-shadow: 0 0 10px rgba(244, 114, 7, 0.493);
+  background-color: rgba(50, 59, 59, 0.255);
+  border: none;
+  font-size: 14pt;
+  border-radius: 10%;
+  height: 40px;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(255, 123, 0);
+
+}
+
+div#calcular_frete{
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1350px) {
+  /* Geral */
+  .flex{
+    flex-direction: column-reverse;
+  }
+  /* Index */
+  .menu-desk, .perfil{
+    display: none;
+  }
+  .black_hole{
+
+    width: 250px;
+    height: 250px;
+  }
+  .img-info{
+    margin-left: -150px;
+  }
+  .tema{
+    margin-left: -80px;
+  }
+  .logo{
+    margin-left: -70px;
+  }
+
+  /*  TRABALHE CONOSCO */
+  .foto_associados, .foto_cliente, .black_hole.associados{
+   display: none;
+  }
+  
+}
+
+/* Login_Cadastro */
+
+.container {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 900px;
+  max-width: 100%;
+  display: flex;
+}
+
+.form-container {
+  flex: 1;
+  padding: 50px;
+}
+
+.form-container h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-container button:hover {
+  background: rgb(255, 123, 0);
+}
+
+.form-container p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.form-container p a {
+  color: rgb(255, 123, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-container p a:hover {
+  text-decoration: underline;
+}
+
+.login-container {
+
+  background: black;
+  color: white;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 40pt;
+}
+
+.login-container p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.login-container p a {
+  color: rgb(255, 123, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-container p a:hover {
+  text-decoration: underline;
+}
+
+
+/* Formularios */
+
+.signup-container {
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #ff730f;
+}
+
+.signup-form-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.signup-form-input:focus {
+  border-color: #3a3d97;
+  outline: none;
+}
+
+.signup-form-button {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-form-button:hover {
+  background: #ff730f;
+}
+
+.signup-footer {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-footer-link {
+  color: #ff730f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-footer-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Fale Conosco */
+
+
+textarea#comentario{
+  font-size: 12pt;
+  min-width: 500px;
+  max-width: 500px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+/* info pedido */
+div.txt_info_pedido{
+  text-align: center;
+  line-height: 2.5;
+  font-size: 14pt;
+  color: white;
+  
+}
+
+div#enviar_pedido{
+  text-align: center;
+  margin-top: 20px;
+}
+#icone_confirmação{
+  color: #3cd40a;
+  font-size: 80pt;
+  margin-left: 550px;
+}
+
+/* Inscrição Trabalho */
+
+#curriculo{
+  color: #ff730f;
+}
